@@ -41,4 +41,10 @@ export class CarsService {
       .map((res: Response) => res.json());
   }
 
+  public getAppTitle() {
+    return this.http.get('http://localhost:3000/title')
+      .map((response: Response) => response.json())
+      .map(data => data.value);
+  }
+
 }

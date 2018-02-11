@@ -17,12 +17,15 @@ export class AppComponent implements OnInit {
   public cars: Car[] = [];
   public carName: string = '';
   public colors = ['red', 'blue', 'green', 'pink', 'yellow', 'grey'];
+  public appTitle;
 
   constructor(
     private carsService: CarsService,
   ) {}
 
   public ngOnInit() {
+    this.appTitle = this.carsService.getAppTitle();
+    console.log(this.appTitle);
     this.loadCars();
   }
 
