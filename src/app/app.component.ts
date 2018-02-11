@@ -28,7 +28,10 @@ export class AppComponent implements OnInit {
 
   public loadCars() {
     this.carsService.getCars()
-      .subscribe((items: Car[]) => this.cars = items);
+      .subscribe(
+        (items: Car[]) => this.cars = items,
+        (error) => alert(error)
+      );
   }
 
   public addCar() {
