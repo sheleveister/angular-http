@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import { Response } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/Rx';
 
 @Injectable()
@@ -11,7 +10,10 @@ export class CarsService {
   ) {}
 
   public getCars() {
-    return this.http.get('http://localhost:3000/cars').map((res: Response) => res.json());
+    const headers = new Headers({
+      'Content-Type': 'application/json; charset=utf-8'
+    });
+    return this.http.get('http://localhost:3000/cars', { headers }).map((res: Response) => res.json());
   }
 
   public addCar(carName: string) {
