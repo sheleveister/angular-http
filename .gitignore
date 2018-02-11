@@ -36,3 +36,4 @@ Thumbs.db
 .git
 .gitignore
 package-lock.json
+readme.js

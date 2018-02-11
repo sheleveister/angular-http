@@ -1,9 +1,44 @@
 {
   "cars": [
     {
+      "id": 2,
+      "name": "Audi",
+      "color": "pink"
+    },
+    {
+      "id": 3,
+      "name": "BMW",
+      "color": "green"
+    },
+    {
+      "id": 4,
+      "name": "Lada",
+      "color": "blue"
+    },
+    {
+      "id": 6,
       "name": "Ford",
-      "color": "white",
-      "id": 1
+      "color": "red"
+    },
+    {
+      "name": "Lamborgini",
+      "color": "blue",
+      "id": 9
+    },
+    {
+      "name": "Audi",
+      "color": "pink",
+      "id": 10
+    },
+    {
+      "name": "Ford",
+      "color": "green",
+      "id": 11
+    },
+    {
+      "name": "Lamborgini",
+      "color": "red",
+      "id": 12
     }
   ]
 }
